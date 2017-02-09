@@ -5,5 +5,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/
+feign:
+  hystrix:
+    enabled: false
+
 server:
   port: ${SERVER_PORT:8010}
