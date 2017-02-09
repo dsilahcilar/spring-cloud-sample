@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: service-4
+server:
+  port: ${SERVER_PORT:8040}

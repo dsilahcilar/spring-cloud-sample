@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: service-3
+server:
+  port: ${SERVER_PORT:8030}
