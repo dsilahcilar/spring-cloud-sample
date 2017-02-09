@@ -1,4 +1,8 @@
 package com.bilyoner.microservices.contracts;
 
-public class Service1Contract {
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public interface Service1Contract  {
+    @RequestMapping("/service-1")
+    String service1Controller();
 }
