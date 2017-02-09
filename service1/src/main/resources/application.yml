@@ -4,6 +4,6 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/
+      defaultZone: http://${EUREKA_USERNAME:istanbul}:${EUREKA_PASSWORD:coders}@${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/
 server:
   port: ${SERVER_PORT:8010}
