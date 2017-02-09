@@ -1,0 +1,29 @@
+---
+spring:
+  application:
+    name: @application.name@
+  profiles:
+    active: local
+  cloud:
+    config:
+      server:
+        bootstrap: true
+
+info:
+  build:
+    name: @application.name@
+    group: @project.groupId@
+    artifact: @project.artifactId@
+    version: @project.version@
+
+---
+spring.profiles: local
+
+spring:
+  profiles:
+    include: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file://${HOME}/istanbul-coders-microservices/egitim/spring-cloud-sample-properties
